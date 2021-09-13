@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-image:url({% static 'images/blood.jpg'%}); background-repeat: no-repeat;  background-size: cover ;  ">
+<!-- <h1 style="color: yellow; font-size: 50px ;" align="center";> Welcome Blood-Donor </h1> -->
+<div>
+    <h2 align="center">{{message}}</h2>
+    <div class="row" style="margin-left: 40px; margin-top: -60px;">
+        <div class="col-5" style="font-size: large;">
+            
+                <table style="background-color:rgba(255,255,255,0.3);color:black ">
+                    <form style="font-size:25px;color:white;" action="" method="POST">
+                {% csrf_token %}
+                {% for i in forms %}
+                    <tr><td>{{i.label_tag}}<br><br></td><td>{{i}}</td></tr>
+                {% endfor %}
+                    </table>
+                <input  type ="submit" value="submit" class="btn btn-danger" >
+            <h4 style="color:lightgreen; padding-left: 50px ">{{msg}}</h4>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+{% endblock content %}

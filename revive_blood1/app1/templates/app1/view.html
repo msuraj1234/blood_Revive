@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+{% comment %} <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <title>BloodFeedForm</title>
+</head> {% endcomment %}
+
+<body style="background-image: url({% static 'images/2d1.jpg' %}); background-repeat: no-repeat; background-size:100%;">
+    {% comment %} <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'images/logo.jpg' %}" alt="" width="35" height="25" class="d-inline-block align-text-top">
+                <b style="font-size: 25px; font-family: cursive; color: rgb(73, 5, 5);">Blood Revive</b>
+              </a>
+        </div>
+      </nav> {% endcomment %}
+      <div style="margin-top: 0px; padding-top: 0px; height: 100px;" class="wrapper fadeInDown">
+        <h1 style="font-size: 40px; margin-top: 0px">We value your Suggestion.</h1>
+        <div id="formContent" style="background-color: #a6d0f5;">
+          <form action="" method="POST" style="background-color: #dbecf;">
+            {% csrf_token %}
+            <table style="color: rgb(46, 51, 53);">
+                {% for i in form %}
+                <tr>
+                    <td>{{i.label_tag}}</td><td><br>
+                    {{i}}</td>
+                </tr>
+                {% endfor %}
+    
+            </table><br>
+            <input style="margin-left: 20px;" type="submit" value="Post Your Suggestion">
+        </form>
+        </div>
+      </div>
+</body>
+
+{% endblock content %}
+
+

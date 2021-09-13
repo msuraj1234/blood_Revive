@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body style="background-image: url({% static 'images/bg2.jpg' %}); background-repeat: no-repeat; background-size:100%;">
+<center><div><h2 style="color: rgb(73, 5, 5);">Blood Donor List..</h2></div></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-responsive" data-pattern="priority-columns">
+                    {% if group  %}
+                    <table class="table table-bordered table-hover">
+                        <tbody>
+                            <tr style="background-color: skyblue; text-align: center;">
+                                <th>Name</th>
+                                <th>From Address</th>
+                                <th>To Address</th>
+                                <th>BloodGroup</th>
+                                <th>Distance</th>
+                                <th>Phone No</th>
+                            </tr>
+                            {% for g in group %}
+                            <tr style="text-align: center;background-color: rgba(255,255,255,0.7);">{% for i in g %}<td> {{i}}</td>{% endfor %}
+                            </tr>
+                        </tbody>
+                        {% endfor %}
+                    </table>
+                    {% else %}
+                    <h1>There is no match for your requirements</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+</body>
+{% endblock content %}

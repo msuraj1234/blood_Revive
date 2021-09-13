@@ -1,0 +1,88 @@
+{% extends "users/base1.html" %}
+{% load static %}
+
+{% block content %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <style>
+    img {
+  float: right;
+}
+   .div{
+  float: top-right;
+  padding: 15px;
+   }
+    </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+  <center>
+      <h1>About us</h1>
+      <h4>National blood policy standards and guidelines ensuring proper collection & donation, effective management and monitoring the quality and quantity of the donated blood.
+
+</h4>
+
+  </center>
+  <div class="col-md-6 text" >
+      <h1>About Blood Doners </h1>
+    <li style="list-style-type: disc; list-style-position: inside">
+					<b>The bio metric Donor Management System for identifying, tracking
+                        and blocking donors based on donor's health, donation history etc.</b>
+				</li>
+
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b> It provides features such as blood grouping, TTI screening,
+					antibody screening, component preparation etc. as per the defined
+					processes and rules.</b> </li>
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b>A centralized Blood Inventory Management System for keeping track
+					of the blood stock across numerous blood banks.</b> </li>
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b>Bio-Medical Waste Management System for disposal of discarded blood
+					and other waste generated during this process.</b> </li>
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b> Generation of rare blood group donor registries and the generation
+					of regular repeat donors</b> </li>
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b> the cells that help stop bleeding by clumping and forming plugs
+                        (clotting) in blood vessels.</b> </li>
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b> Donated platelets are commonly given to people with clotting
+                        problems or cancer and people who will have organ transplants or
+                        major surgeries.</b> </li>
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b> allows you to donate a concentrated amount of red blood cells.
+                        Red blood cells deliver oxygen to your organs and tissues.
+                        Donated red blood cells are typically given to people with severe
+                        blood loss, such as after an injury or accident, and people with sickle
+                        cell anemia.</b> </li>
+
+      <li style="list-style-type: disc; list-style-position: inside">
+					<b> collects the liquid portion of the blood (plasma). Plasma helps blood clot
+                        and contains antibodies that help fight off infections. Plasma is commonly
+                        given to people in emergency and trauma situations to help stop bleeding.</b> </li>
+
+
+
+
+
+
+  </div>
+   <img src="{% static 'images/about.jpg' %}">
+
+
+
+</body>
+{% endblock %}
+
+
+
+
+

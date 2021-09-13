@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<body>
+   <section id="process" class="donation-care">
+      <div class="container">
+         <div class="row session-title">
+            <h2 style="color: #3a72a3;margin-bottom: 0px;margin-top: -20px; font-family: 'Trebuchet MS';">“Donating Money Is Great, But Donating Blood Is Even Better”</h2> <br>
+         </div>
+         <div class="row">
+            <div class="col-md-3 col-sm-6 vd">
+               <div class="bkjiu">
+                  <img src="{% static 'images/r1.jpg' %}" width="100%">
+                  <h4 style="color:#3a72a3"><b>1 - </b>Your healing begins with </h4>
+                  <h4 style="color:#3a72a3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;charity.</h4>
+                  <p style="font-family: serif; font-size: 16px;">If you’re donating whole blood, we’ll cleanse an area on your arm and insert a brand new sterile
+                     needle for the blood draw.A whole blood donation takes about 8-10 minutes.When approximately a pint
+                     of whole blood has been collected, the donation is complete and a staff person will place a bandage
+                     on arm.
+                  </p>
+                  <br>
+                  <button class="btn btn-sm btn-danger" onclick="document.location.href = '{% url 'donor' %}'">Donor
+                     Registration<i class="fas fa-arrow-right"></i></button>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 vd">
+               <div class="bkjiu">
+                  <img src="{% static 'images/r2.jpg' %}" width="100%">
+                  <h4 style="color:#3a72a3"><b>2 - </b>Every drop of blood is like a </h4>
+                  <h4 style="color:#3a72a3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;breath for someone!</h4>
+                  <p style="font-family: serif; font-size: 16px;">We’ll sign you in and go over basic eligibility. You’ll read some information about donating blood.
+                     We’ll ask you for your complete address. Your address needs to be complete (including PO Box,
+                     street/apartment number) and the place where you will receive your mail 8 weeks from donation.
+                  </p>
+                  <br>
+                  <button class="btn btn-sm btn-danger" onclick="document.location.href = '{% url 'receiver' %}'">Receiver
+                     Registration<i class="fas fa-arrow-right"></i></button>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 vd">
+               <div class="bkjiu">
+                  <img src="{% static 'images/r3.jpg' %}" width="100%">
+                  <h4 style="color:#3a72a3"><b>3 - </b>Awareness & Facts</h4>
+                  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                  <!--                     <p>If you’re donating whole blood, we’ll cleanse an area on your arm and insert a brand new sterile needle for the blood draw.A whole blood donation takes about 8-10 minutes.When approximately a pint of whole blood has been collected, the donation is complete and a staff person will place a bandage on your arm.-->
+                  <!--</p>-->
+                  <p style="font-family: serif; font-size: 16px;">The gift of blood helps save lives. Every
+                     minute, someone in the world needs blood, and more than 50,000 units of blood are needed each year in India alone.
+                     Learn more about blood types and compatibility, different ways to donate and the need for
+                     lifesaving blood so you can make an informed decision about donation.</p>
+                  <button class="btn btn-sm btn-danger" onclick="document.location.href ='{% url 'facts' %}'">View Facts<i class="fas fa-arrow-right"></i></button>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 vd">
+               <div class="bkjiu">
+                  <img src="{% static 'images/r4.jpg' %}" width="100%">
+                  <h4 style="color:#3a72a3"><b>4 - </b>We Value your Suggestions</h4>
+                  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                  <p style="font-family: serif; font-size: 16px;">After donating blood, you’ll have a snack and something to drink .You’ll leave after 10-15 minutes
+                     and continue your normal routine. Enjoy the feeling of knowing you are helping to save lives. Take
+                     a selfie, or simply share your good deed with friends. It may inspire them to become blood donors.
+                  </p>
+                  <br>
+                  <button class="btn btn-sm btn-danger" onclick="document.location.href = '{% url 'suggest' %}'">Post Your
+                     Suggestions<i class="fas fa-arrow-right"></i></button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+</body>
+{% endblock %}

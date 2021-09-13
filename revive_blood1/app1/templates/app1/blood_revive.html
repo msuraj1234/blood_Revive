@@ -1,0 +1,430 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Awareness and Facts</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        /* .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        } */
+
+        .carousel-inner>.carousel-item>img {
+            height: 100vh;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active ">
+                    <img class="d-block w-100" src="{% static 'images/blood12.jpg' %}" alt="first image">
+                </div>
+
+                <div class="item ">
+                    <img class="d-block w-100" src="{% static 'images/slide-02.jpg' %}" alt="Chicago">
+                </div>
+
+                <div class="item ">
+                    <img class="d-block w-100" src="{% static 'images/slide-03.jpg' %}" alt="New york">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <div style="width:100%">
+                        <img src="{% static 'images/blooddo.jpg' %}" alt="image" width="50%" class="img-circle">
+                    </div>
+
+                    <h2>Necessity</h2>
+                    <p>The reason to donate is simple because it helps to save people’s lives. In fact, every two
+                        seconds of every day, someone needs blood. Since blood cannot be manufactured outside the body
+                        and has a limited shelf life, the supply must constantly be replenished by generous blood donors
+                        only.</p>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div style="width:100%">
+                        <img src="{% static 'images/blood4.jpg' %}" alt="image" width="50%" class="img-circle">
+                    </div>
+
+                    <h2>Donate-blood</h2>
+                    <p>Blood is the most precious gift that anyone can give to another person the gift of life. A
+                        decision to donate your blood can save a life, or even several if your blood is separated into
+                        its components - red cells, platelets and plasma - which can be used individually for patients
+                        with specific conditions.</p>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div style="width:100%">
+                        <img src="{% static 'images/blood1.jpg' %}" alt="image" width="50%" class="img-circle">
+                    </div>
+
+                    <h2>Save-life</h2>
+                    <p>Blood Donation Is The Act Of Giving Blood To Someone Who Needs It. It Is Not Just About Giving
+                        Blood, But It Is An Act Of Kindness That Saves The Lives Of Hundreds Of People. These Fifteen
+                        Minutes Of Your Life Can Save Someone’s Entire Life. You Can’t Even Imagine That Donating One
+                        Bag Of Blood Can Be So Beneficial To The Human Race. </p>
+
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+
+
+
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Benefits of Donating Blood. <span class="text-muted">
+                        </span></h2>
+                    <p class="lead">Donating blood has benefits for your emotional and physical health. According to a
+                        report by the Mental Health Foundation, helping others can:</p>
+
+                    <ul>
+                        <h3 style="font-size: 22px;">
+                            <li>
+                                <P>Reduce stress</P>
+                            </li>
+                            <li>
+                                <p>Improve your emotional well-being</p>
+                            </li>
+                            <li>
+                                <P>Benefit your physical health</P>
+                            </li>
+                            <li>
+                                <P>Help get rid of negative feelings</P>
+                            </li>
+                            <li>
+                                <P>Provide a sense of belonging and reduce isolation</P>
+                            </li>
+                        </h3>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 order-md-1">
+                    <div class="col-md-5">
+
+                        <img src="{% static 'images/benefits.jpg' %}" alt="image1" width="291%" height="525px" />
+
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <div class="col-md-5">
+
+                        <img src="{% static 'images/blooddonate4.jpg' %}" alt="image1" width="279% " height="420px" />
+
+                    </div>
+
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Do's & Dont's of Before blood-Donating. <span
+                            class="text-muted"></span></h2>
+                    <p class="lead">Additional tips before donating:</p>
+
+                    <ul>
+                        <h3 style="font-size: 22px;">
+                            <li>
+                                <P>Donating Platelets? Don't take aspirin for 2 days before your appointment.</P>
+                            </li>
+                            <li>
+                                <P>Ask a friend to donate at the same time . You can support each other and do twice as
+                                    much good!</P>
+                            </li>
+                            <li>
+                                <P>Download the Blood Donor App to receive appointment reminders, start your RapidPass
+                                    and more.</P>
+                            </li>
+
+                        </h3>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Do's & Dont's of After Donating-Blood. <span
+                            class="text-muted"></span></h2>
+                    <p class="lead">Additional tips for after your donation:</p>
+
+                    <ul>
+                        <h3 style="font-size: 22px;">
+                            <li>
+                                <P>Keep the strip bandage on for the next several hours; to avoid a skin rash, clean the
+                                    area around the bandage with soap and water.</P>
+                            </li>
+                            <li>
+                                <P>Don’t do any heavy lifting or vigorous exercise for the rest of the day.</P>
+                            </li>
+                            <li>
+                                <P>If the needle site starts to bleed, apply pressure and raise your arm straight up for
+                                    5-10 minutes or until bleeding stops.</P>
+                            </li>
+                            <li>
+                                <P>Keep eating iron-rich foods.</P>
+                            </li>
+                        </h3>
+                    </ul>
+
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div class="col-md-5">
+
+                        <img src="{% static 'images/blooddonate2.jpg' %}" alt="image1" width="291%" height="525px" />
+
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-5">
+
+                    <img src="{% static 'images/blooddonate1.jpg' %}" alt="image1" width="100%" height="525px" />
+
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Side effects of Donating-Blood. <span class="text-muted"></span></h2>
+                    <p class="lead">Side effects of donating blood:</p>
+
+                    <ul>
+                        <h3 style="font-size: 22px;">
+                            <li>
+                                <P>Blood donation is safe for healthy adults. There’s no risk of contracting disease.
+                                    New, sterile equipment is used for each donor.</P>
+                            </li>
+                            <li>
+                                <P>Some people may feel nauseous, lightheaded, or dizzy after donating blood. If this
+                                    happens, it should only last a few minutes. You can lie down with your feet up at
+                                    the until you feel better.
+
+                                </P>
+                            </li>
+                            <li>
+                                <P>You may also experience some bleeding at the site of the needle. Applying pressure
+                                    and raising your arm for a couple of minutes will usually stop this. You may develop
+                                    a bruise at the site.</P>
+                            </li>
+                            <li>
+                                <P>Bruising,continued bleeding,dizziness,lightheadedness,nausea,pain,physical weakness.
+                                </P>
+                            </li>
+                        </h3>
+                    </ul>
+
+                </div>
+                
+            </div>
+
+
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <section id="process" class="donation-care">
+                <div class="container">
+                    <div class="row session-title">
+                        <h2>Donation Process</h2>
+                        <p>The donation process from the time you arrive center until the time you leave</p>
+                    </div>
+                    <div class="row ">
+
+                        <div class="col-md-3 col-sm-6  vd">
+                            <div class="">
+                                <div class="bkjiu">
+                                    <img src="{% static 'images/g1.jpg' %}" alt="" width="250px">
+                                    <h4><b>1 - </b>Registration</h4>
+                                    <p>We’ll sign you in and go over basic eligibility.
+                                        You’ll read some information about donating blood.
+                                        We’ll ask you for your complete address. Your address needs to be complete
+                                        (including PO Box, street/apartment number) and the place where you will receive
+                                        your mail 8 weeks from donation.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6  vd">
+                            <div class="">
+                                <div class="bkjiu">
+                                    <img src="{% static 'images/g2.jpg' %}" alt="" width="250px">
+                                    <h4><b>2 - </b>Seeing</h4>
+                                    <p>You’ll answer a few questions about your health history and places you’ve
+                                        traveled, during a private and confidential interview.
+                                        You’ll tell us about any prescription and/or over the counter medications that
+                                        may be in your system.
+                                        We’ll check your temperature, pulse, blood pressure and hemoglobin level.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6  vd">
+                            <div class="">
+                                <div class="bkjiu">
+                                    <img src="{% static 'images/g3.jpg' %}" alt="" width="250px">
+                                    <h4><b>3 - </b>Donation</h4>
+                                    <p>If you’re donating whole blood, we’ll cleanse an area on your arm and insert a
+                                        brand new sterile needle for the blood draw.A whole blood donation takes about
+                                        8-10 minutes.When approximately a pint of whole blood has been collected, the
+                                        donation is complete and a staff person will place a bandage on your arm.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 vd">
+                            <div class="">
+                                <div class="bkjiu">
+                                    <img src="{% static 'images/g4.jpg' %}" alt="" width="250px">
+                                    <h4><b>4 - </b>Save Life</h4>
+                                    <p>After donating blood, you’ll have a snack and something to drink .You’ll leave
+                                        after 10-15 minutes and continue your normal routine.
+                                        Enjoy the feeling of knowing you are helping to save lives.
+                                        Take a selfie, or simply share your good deed with friends. It may inspire them
+                                        to become blood donors. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="container-fluid bg-danger " height="60px" width="">
+            <p class="float-end"><a href="#" style="color: aliceblue;">Back to top</a></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="color: aliceblue;">&copy; 2017–2021 Foundation, Inc. &middot; <a href="#"
+                            style="color: aliceblue;">Privacy</a> &middot; <a href="#"
+                            style="color: aliceblue ;">Terms</a></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <p style="color: rgb(255, 240, 241);">Contact:<a href="#"
+                                style="color: aliceblue;">9876543210</a></p>
+                        <p style="color: aliceblue;">Email:<a href="#"
+                                style="color: aliceblue;">donate-revive@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+{% endblock content %}
